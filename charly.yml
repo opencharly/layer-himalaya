@@ -1,7 +1,7 @@
 version: 2026.232.0520
 himalaya:
     candy:
-        version: 2026.144.1443
+        version: 2026.243.0100
         description: |
             Himalaya IMAP/SMTP email CLI compiled into the image
             Builds and installs the himalaya email CLI from crates.io via
@@ -14,7 +14,7 @@ himalaya:
             present, runs `--version` cleanly, and its `--help` advertises the
             email-management subcommands.
         require:
-            - '@github.com/opencharly/layer-rust:v2026.237.458'
+            - '@github.com/opencharly/layer-rust:v2026.239.1627'
         plan:
             - run: command=cargo install himalaya --locked
               run_as: "${USER}"
