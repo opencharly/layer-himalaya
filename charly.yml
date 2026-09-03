@@ -1,11 +1,11 @@
 version: 2026.232.0520
 himalaya:
     candy:
-        version: 2026.243.0100
+        version: 2026.246.0100
         description: |
             Himalaya IMAP/SMTP email CLI compiled into the image
             Builds and installs the himalaya email CLI from crates.io via
-            `cargo install himalaya --locked`, run as the image user so the
+            `cargo install himalaya`, run as the image user so the
             binary lands in the user's cargo bin (~/.cargo/bin, which the
             required `rust` candy puts on PATH). himalaya is a single
             self-contained Rust binary that speaks IMAP and SMTP to manage
@@ -16,9 +16,9 @@ himalaya:
         require:
             - '@github.com/opencharly/layer-rust:v2026.239.1627'
         plan:
-            - run: command=cargo install himalaya --locked
+            - run: command=cargo install himalaya
               run_as: "${USER}"
-              command: cargo install himalaya --locked
+              command: cargo install himalaya
             - check: the himalaya binary is installed into the user's cargo bin directory
               file:
                 file: ${HOME}/.cargo/bin/himalaya
