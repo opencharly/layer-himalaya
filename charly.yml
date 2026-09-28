@@ -1,7 +1,5 @@
-version: 2026.232.0520
 himalaya:
     candy:
-        version: 2026.246.0100
         description: |
             Himalaya IMAP/SMTP email CLI compiled into the image
             Builds and installs the himalaya email CLI from crates.io via
