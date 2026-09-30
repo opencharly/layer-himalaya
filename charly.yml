@@ -12,7 +12,7 @@ himalaya:
             present, runs `--version` cleanly, and its `--help` advertises the
             email-management subcommands.
         require:
-            - '@github.com/opencharly/layer-rust:v2026.239.1627'
+            - '@github.com/opencharly/layer-rust:v2026.272.0519'
         plan:
             - run: command=cargo install himalaya
               run_as: "${USER}"
