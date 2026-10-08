@@ -58,6 +58,5 @@ Configure an IMAP/SMTP account (credentials via `charly secrets` —
 - Owning skill: `/charly-tools:himalaya` — the IMAP/SMTP email CLI
 - Runtime parent: `/charly-coder:rust`
 - Pairs with: `/charly-infrastructure:gnupg` (PGP-encrypted email)
-- Bundled by: `/charly-openclaw:openclaw-full` (metalayer)
 - [`opencharly/charly`](https://github.com/opencharly/charly) — the charly CLI and image builder
 - [`opencharly/opencharly`](https://github.com/opencharly/opencharly) — the umbrella
